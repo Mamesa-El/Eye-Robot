@@ -19,7 +19,7 @@
         visibility: visible;
     }
     .search{
-        visibility: hidden;
+        visibility: visible;
         position: absolute;
     }
 }
@@ -38,7 +38,7 @@
         width: 100%;
     }
     .hp-viewport-hide{
-        visibility: hidden;
+        visibility: visible;
     }
     .menu-logo{
         visibility: visible;
