@@ -405,50 +405,18 @@ ul {
 
 .team-container {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap; /* Allow items to wrap */
-    margin: 0 auto; /* Center the container on the page */
-    padding: 20px; /* Add padding inside the container */
-}
-
-.team-member {
-    flex: 1; /* Allows each item to grow and fill the space */
-    max-width: calc(33.333% - 40px); /* Each item can take up to a third of the container width minus the gap */
-    margin: 20px; /* Spacing between items */
-    text-align: center; /* Center the text below the image */
-    display: flex; /* Use flexbox for aligning image within this div */
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center items horizontally within the .team-member div */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between images */
 }
 
 .team-member img {
-    width: auto; /* Maintain the aspect ratio */
-    height: 200px; /* Set a fixed height for all images */
-    object-fit: cover; /* This will cover the area without stretching the image */
-    border-radius: 50%; /* Optional: rounds the images to make them circular */
-    margin-bottom: 10px; /* Space between image and text */
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-/* If images are still not the same size, add a container around the image with fixed size */
-.team-member .image-container {
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
-    display: flex; /* Use flex to center the content */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    overflow: hidden; /* Hide overflow to maintain the circular shape in case of border-radius */
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .team-member {
-        max-width: 50%; /* Two images per row on smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .team-member {
-        max-width: 100%; /* One image per row on very small screens */
-    }
+.team-member {
+    text-align: center;
 }
