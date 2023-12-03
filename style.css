@@ -406,24 +406,24 @@ ul {
 .team-container {
     display: flex;
     justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
+    align-items: center; /* Align items vertically */
     gap: 20px; /* Space between each team member */
     margin-top: 100px; /* Adjust this value to push the content down below the menu */
-    padding: 0 50px; /* Adjust this value to add padding on the sides */
+    padding: 0 50px; /* Add padding on the sides */
     width: calc(100% - 100px); /* Adjust the width of the container to account for padding */
 }
 
 .team-member {
     text-align: center;
-    margin: 0 10px; /* Maintains margin between members if they wrap */
     flex: 1; /* Allows flex items to grow and take up equal space */
-    max-width: 300px; /* Sets a maximum width for each team member */
+    margin: 0 10px; /* Maintains margin between members if they wrap */
 }
 
 .team-member img {
     width: 100%; /* Makes the image responsive within its container */
-    height: auto; /* Maintains aspect ratio */
+    height: 200px; /* Fixed height for all images */
     object-fit: contain; /* Ensures the image is fully visible without cropping */
+    background: #fff; /* Adds a white background to handle transparent images */
 }
 
 @media screen and (max-width: 768px) {
@@ -437,5 +437,6 @@ ul {
         margin-bottom: 20px; /* Adds space between stacked team members */
     }
 }
+
 
 
