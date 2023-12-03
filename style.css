@@ -423,7 +423,7 @@ ul {
 
 .team-member img {
     max-width: 100%; /* Ensures image is no wider than its container */
-    max-height: 200px; /* New fixed max height for all images */
+    max-height: 300px; /* New fixed max height for all images */
     height: auto; /* Keep height auto to maintain aspect ratio */
     object-fit: contain; /* Ensures the image is fully visible without cropping */
     background: #fff; /* Adds a white background to handle transparent images */
@@ -441,6 +441,9 @@ ul {
     }
 }
 
+.cat-image {
+    max-height: 100px; /* Adjust this value as needed to scale down the cat image */
+}
 
 
 
