@@ -405,18 +405,36 @@ ul {
 
 .team-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly; /* Distributes space evenly */
     align-items: center;
-    gap: 20px; /* Adjust the gap between images */
-}
-
-.team-member img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px 0; /* Add some padding top and bottom */
+    width: 100%; /* Make sure the container takes full width */
 }
 
 .team-member {
-    text-align: center;
+    flex-basis: calc(33.333% - 40px); /* Give each item a third of the space minus the gap */
+    margin: 20px; /* This margin is part of the 'gap' calculation in flex-basis */
+    text-align: center; /* Center the text */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.team-member img {
+    max-width: 100%; /* Ensure image is responsive and doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+@media screen and (max-width: 768px) {
+    .team-member {
+        flex-basis: calc(50% - 40px); /* On smaller screens, go for a 2-column layout */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team-member {
+        flex-basis: 100%; /* On even smaller screens, stack them vertically */
+        margin: 10px 0; /* Reduce the margin for smaller screens */
+    }
 }
