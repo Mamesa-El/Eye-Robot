@@ -402,3 +402,21 @@ ul {
 .fa-searchs{
     visibility: hidden;
 }
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.team-member img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+}
