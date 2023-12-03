@@ -418,7 +418,9 @@ ul {
     flex: 1; /* Allows flex items to grow and take up equal space */
     margin: 0 10px; /* Maintains margin between members if they wrap */
     display: flex; /* Use flex to align the image within */
-    justify-content: center; /* Center the image within the team member div */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically, might not be necessary depending on your layout */
 }
 
 .team-member img {
