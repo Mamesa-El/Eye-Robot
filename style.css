@@ -405,37 +405,29 @@ ul {
 
 .team-container {
     display: flex;
-    justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
-    gap: 40px; /* Increase the gap between images */
-    margin-top: 20px; /* Add margin at the top if needed */
-}
-
-.team-member img {
-    width: auto; /* Maintain the aspect ratio */
-    height: 300px; /* Double the height */
-    display: block;
-    margin: 0 auto;
-    object-fit: cover; /* Cover the area without stretching */
+    justify-content: space-between; /* Distributes space between and around items */
+    align-items: center;
+    width: 100%; /* Stretch to the full width */
+    padding: 20px; /* Add padding if needed */
 }
 
 .team-member {
-    text-align: center;
-    padding: 0 20px; /* This adds padding to the left and right of each team member */
+    flex: 1; /* Allows each item to grow and take up equal space */
+    text-align: center; /* Center the text below the image */
+    margin: 0 10px; /* Add some horizontal margin if you want space between the images */
 }
 
-/* Adjust this media query according to your needs */
-@media screen and (max-width: 768px) {
-    .team-member {
-        flex-basis: 50%; /* Two images per row on smaller screens */
-        padding: 0 10px; /* Less padding on smaller screens */
-    }
+.team-member img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover the area without stretching the image */
 }
 
-@media screen and (max-width: 480px) {
+/* Optional: Add max-width to prevent images from becoming too large on wider screens */
+@media screen and (min-width: 1200px) {
     .team-member {
-        flex-basis: 100%; /* Stack vertically on very small screens */
-        padding: 0 5px; /* Even less padding on very small screens */
+        max-width: 400px; /* Maximum width for each team member */
+        margin: 0 auto; /* Center the team member in the allocated flex space */
     }
 }
 
