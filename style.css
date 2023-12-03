@@ -407,31 +407,36 @@ ul {
     display: flex;
     justify-content: center; /* Center children horizontally */
     align-items: center; /* Center children vertically */
-    gap: 20px; /* Adjust the gap between images */
+    gap: 40px; /* Increase the gap between images */
+    margin-top: 20px; /* Add margin at the top if needed */
 }
 
 .team-member img {
-    width: auto; /* Adjust the width as needed */
-    height: 150px; /* Adjust height as needed */
+    width: auto; /* Maintain the aspect ratio */
+    height: 300px; /* Double the height */
     display: block;
     margin: 0 auto;
-    object-fit: cover; /* If you want to ensure the images cover the area */
+    object-fit: cover; /* Cover the area without stretching */
 }
 
 .team-member {
     text-align: center;
-    flex: 1; /* Give each .team-member equal space */
+    padding: 0 20px; /* This adds padding to the left and right of each team member */
 }
 
+/* Adjust this media query according to your needs */
 @media screen and (max-width: 768px) {
     .team-member {
         flex-basis: 50%; /* Two images per row on smaller screens */
+        padding: 0 10px; /* Less padding on smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .team-member {
         flex-basis: 100%; /* Stack vertically on very small screens */
+        padding: 0 5px; /* Even less padding on very small screens */
     }
 }
+
 
