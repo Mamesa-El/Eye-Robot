@@ -1,15 +1,30 @@
-## 🍎— Responsive Apple Website Clone using only HTML & CSS - Progate New Year Bootcamp 2021 Team project.
-![](Readme/client-side.JPG)
-Apple Website Clone using only HTML & CSS - Progate New year 2021 Bootcamp Project Team.
-Progate New Year Bootcamp 2021 Team project. We managed to finish the project in 3 days, i'm satisfied to see all of the members doing their job really well
+Agency Jekyll theme
+====================
 
-### To be declared "PASS", your Webpage must have 6 of this components:
+Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
 
-- Header ✔
-- Bagian Main ✔
-- Bagian Body ✔
-- Footer ✔
-- Setidaknya satu animasi ✔
-- Desain responsif untuk smartphone dan tablet ✔
+# How to use
 
-finished in 3 days.
+###Portfolio 
+
+Portfolio projects are in '/_posts'
+
+Images are in '/img/portfolio'
+
+###About
+
+Images are in '/img/about/'
+
+###Team
+
+Team members and info are in '_config.yml'
+
+Images are in '/img/team/'
+
+
+# Demo
+
+View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+
+=========
+For more details, read [documentation](http://jekyllrb.com/)
