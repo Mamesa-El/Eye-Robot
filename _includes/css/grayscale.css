@@ -366,3 +366,16 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.navbar-logo {
+    height: 20px; /* Adjust as needed */
+    display: inline-block; /* Or 'inline' depending on your preference */
+    vertical-align: middle; /* Aligns the image vertically with the text */
+    margin-right: 10px; /* Adds some space between the logo and the text */
+}
+
+.navbar-text {
+    display: inline-block; /* Or 'inline' depending on your preference */
+    vertical-align: middle; /* Aligns the text vertically with the logo */
+    /* Add any additional styling for the text here */
+}
