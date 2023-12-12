@@ -2,7 +2,7 @@
 title: EyeRobot
 email: your-email@domain.com
 # url: https://snarain.github.io
-url: https://mamesa-el.github.io
+url: https://mamesa-el.github.io/Eye-Robot/
 description: "Envisioning whole new worlds"
 
 # Color settings (hex-codes without the leading hash-tag)
@@ -11,7 +11,7 @@ color:
   links: '#219ab3'
 
 # Footer settings
-footer: EyeRobot
+footer: Eye Robot
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
